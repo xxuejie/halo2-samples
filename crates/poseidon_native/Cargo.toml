@@ -1,0 +1,28 @@
+[package]
+name = "poseidon_natives"
+version = "0.1.0"
+edition = "2021"
+autobins = false
+
+[[bin]]
+name = "poseidon_native_prover"
+path = "src/bin/prover.rs"
+
+[[bin]]
+name = "poseidon_native_verifier"
+path = "src/bin/verifier.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+halo2_gadgets = { git = "https://github.com/xxuejie/halo2", rev = "6e1c57a" }
+halo2_proofs = { git = "https://github.com/xxuejie/halo2", rev = "6e1c57a" }
+
+# Prover only std related components
+rand = "0.8"
+
+ckb-hash = "0.106.0"
+ckb-mock-tx-types = "0.106.0"
+ckb-jsonrpc-types = "0.106.0"
+ckb-types = "0.106.0"
+serde_json = "1.0"

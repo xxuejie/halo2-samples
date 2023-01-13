@@ -1,0 +1,9 @@
+[workspace]
+
+members = [
+  "crates/poseidon_native",
+  "crates/poseidon_ckb_verifier",
+]
+
+[profile.release]
+debug = true
