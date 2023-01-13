@@ -453,23 +453,6 @@ dependencies = [
 [[package]]
 name = "halo2_gadgets"
 version = "0.2.0"
-source = "git+https://github.com/xxuejie/halo2?rev=4942041#49420419893fec16f20ba8e6c40b3ecfe5b6d5a6"
-dependencies = [
- "arrayvec",
- "bitvec",
- "ff",
- "group",
- "halo2_proofs 0.2.0 (git+https://github.com/xxuejie/halo2?rev=4942041)",
- "hashbrown",
- "lazy_static",
- "pasta_curves",
- "subtle",
- "uint",
-]
-
-[[package]]
-name = "halo2_gadgets"
-version = "0.2.0"
 source = "git+https://github.com/xxuejie/halo2?rev=6e1c57a#6e1c57a0a8d12a366659624d10b58742ddf92d9c"
 dependencies = [
  "arrayvec",
@@ -485,16 +468,20 @@ dependencies = [
 ]
 
 [[package]]
-name = "halo2_proofs"
+name = "halo2_gadgets"
 version = "0.2.0"
-source = "git+https://github.com/xxuejie/halo2?rev=4942041#49420419893fec16f20ba8e6c40b3ecfe5b6d5a6"
+source = "git+https://github.com/xxuejie/halo2?rev=81a100d#81a100d27c05ec04a5fb511af1a584c13213d02e"
 dependencies = [
- "blake2b_simd",
+ "arrayvec",
+ "bitvec",
  "ff",
  "group",
+ "halo2_proofs 0.2.0 (git+https://github.com/xxuejie/halo2?rev=81a100d)",
  "hashbrown",
+ "lazy_static",
  "pasta_curves",
- "rand_core 0.6.4",
+ "subtle",
+ "uint",
 ]
 
 [[package]]
@@ -509,6 +496,19 @@ dependencies = [
  "rand_core 0.6.4",
  "rayon",
  "tracing",
+]
+
+[[package]]
+name = "halo2_proofs"
+version = "0.2.0"
+source = "git+https://github.com/xxuejie/halo2?rev=81a100d#81a100d27c05ec04a5fb511af1a584c13213d02e"
+dependencies = [
+ "blake2b_simd",
+ "ff",
+ "group",
+ "hashbrown",
+ "pasta_curves",
+ "rand_core 0.6.4",
 ]
 
 [[package]]
@@ -688,8 +688,8 @@ name = "poseidon_ckb_verifier"
 version = "0.1.0"
 dependencies = [
  "ckb-std",
- "halo2_gadgets 0.2.0 (git+https://github.com/xxuejie/halo2?rev=4942041)",
- "halo2_proofs 0.2.0 (git+https://github.com/xxuejie/halo2?rev=4942041)",
+ "halo2_gadgets 0.2.0 (git+https://github.com/xxuejie/halo2?rev=81a100d)",
+ "halo2_proofs 0.2.0 (git+https://github.com/xxuejie/halo2?rev=81a100d)",
 ]
 
 [[package]]

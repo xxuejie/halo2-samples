@@ -7,5 +7,5 @@ edition = "2021"
 
 [dependencies]
 ckb-std = "0.10.0"
-halo2_proofs = { git = "https://github.com/xxuejie/halo2", rev = "4942041" }
-halo2_gadgets = { git = "https://github.com/xxuejie/halo2", rev = "4942041" }
+halo2_proofs = { git = "https://github.com/xxuejie/halo2", rev = "81a100d" }
+halo2_gadgets = { git = "https://github.com/xxuejie/halo2", rev = "81a100d" }
