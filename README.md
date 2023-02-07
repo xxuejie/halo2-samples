@@ -4,9 +4,10 @@ A series of [halo2](https://github.com/zcash/halo2) samples runnable in native o
 
 # Usage
 
-## How to run poseidon hash example
+## How to run poseidon hash example on a Ubuntu 22.04 machine:
 
 ```bash
+$ sudo apt install gcc-riscv64-unknown-elf
 $ git clone https://github.com/xxuejie/halo2-samples
 $ cd halo2-samples
 $ cargo build --release --package poseidon_natives
