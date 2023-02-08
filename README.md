@@ -32,4 +32,13 @@ $ # compiled using newer assembly based ckb-vm:
 $ ./target/release/halo2-runner --tx-file tx.json --cell-index 0 --cell-type input --script-type lock
 Cycles: 77527680
 Runtime: 136.015218ms
+$ # 4. For example, when using a patched ckb-vm with new mops, we can achieve
+$ # lower cycle consumption & runtime.
+$ rm -rf ckb-vm
+$ git clone https://github.com/xxuejie/ckb-vm
+$ cd ckb-vm && git checkout b4e418a && cd ..
+$ cargo build --release --package halo2-runner
+$ ./target/release/halo2-runner --tx-file tx.json --cell-index 0 --cell-type input --script-type lock
+Cycles: 67383904
+Runtime: 116.726608ms
 ```
