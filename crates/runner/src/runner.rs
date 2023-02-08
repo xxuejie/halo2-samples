@@ -106,7 +106,7 @@ fn main() {
 
     let core_machine = AsmCoreMachine::new(
         script_version.vm_isa(),
-        2,
+        u32::MAX,
         u64::MAX,
     );
     let mut machine_builder = DefaultMachineBuilder::new(core_machine)
