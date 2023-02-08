@@ -1,3 +1,4 @@
 target/
 *.bin
 tx.json
+ckb-vm/

@@ -3,6 +3,7 @@
 members = [
   "crates/poseidon_native",
   "crates/poseidon_ckb_verifier",
+  "crates/runner",
 ]
 
 [profile.release]
